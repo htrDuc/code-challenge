@@ -205,3 +205,10 @@ If one turns out wrong, revisit the decision it supports.
 - Board is **top 10 only**; a user's own rank when outside it comes back in the increase response.
 - **A second or two of lag** on the board is acceptable.
 
+---
+
+## 8. Improvements
+
+- **Publish only when the top 10 actually changes** — most bumps don't touch it; diff first to cut broadcast noise.
+- **Idempotency key on the write** — protects against double-counting on client retries.
+
